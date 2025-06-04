@@ -171,13 +171,188 @@ header .menu{
       body {
       background: linear-gradient(to right, #ebf8ff, #e6f0ff);
     }
-   .card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    .slider-container {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+      margin: auto;
     }
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 30px rgba(59, 130, 246, 0.3);
+
+    .slider {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 20px 0;
     }
+
+    .slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+    }
+
+    .slider-btn.left {
+      left: 8px;
+    }
+
+    .slider-btn.right {
+      right: 8px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      min-width: 300px;
+      max-width: 320px;
+      padding: 16px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      height: auto;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      color: #003366;
+      margin: 12px 0 6px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 14px;
+    }
+
+    .notify-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .notify-btn {
+      padding: 10px 16px;
+      font-size: 14px;
+      background: rgba(255, 0, 0, 0.814);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .notify-btn:hover {
+      background: #0056b3;
+    }
+
+    .email-form {
+      display: none;
+      flex-direction: row;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .email-form input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      width: 160px;
+    }
+
+    .email-form button {
+      padding: 10px 16px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .spinner {
+      border: 2px solid #f3f3f3;
+      border-top: 2px solid white;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      animation: spin 1s linear infinite;
+      display: none;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .register-btn {
+      padding: 10px 20px;
+      background-color: rgb(0, 0, 255);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .register-btn:hover {
+      background-color: rgb(44, 44, 209);
+    }
+
+    .pagination-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+      gap: 8px;
+    }
+
+    .pagination-dots .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ccc;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .pagination-dots .dot.active {
+      background-color: #007bff;
+    }
+
+    @media (max-width: 400px) {
+      .email-form {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .email-form input, .email-form button {
+        width: 100%;
+      }
+    }
+ 
     
 
     .live-action h1{
