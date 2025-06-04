@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thor Esports</title>
+  <link rel="stylesheet" href="registerpage1.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+  
+     
+
+
+    <input type="checkbox" name="" id="chk1">
+    <img src="thotlogo-removebg-preview.png" 
+             alt="Thor Esports Logo" 
+             style="width: 80px; margin-bottom: 20px; margin-right: 100px; margin-top: 20px;">
+    <div class="search-box">
+      <form action="">
+        <input type="text" name="search" id="srch" placeholder="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <ul>
+      <li><a href="ffw.html">Home</a></li>
+      <li><a href="tournament.html">Tournaments</a></li>
+      <li><a href="#">Rules</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li>
+        <a href="https://youtube.com/@gamingwithss001?si=C8-jE_T9oWatzpkn"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/_thor_esports_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+        <a href="#">login</a>
+      </li>
+    </ul>
+    <div class="menu">
+      <label for="chk1">
+        <i class="fa fa-bars"></i>
+      </label>
+    </div>
+    
+
+
+
+    </header>
+
+
+    <section class="banner">
+    <img src="48creators.webp" alt="48 Creators Banner" />
+    <div class="details">
+      <h2>ROAD TO AUCTION, PRACTICE WAR GROUP -D</h2>
+      <p><strong>Organized By:</strong> THOR ESPORTS</p>
+      <p><strong>Type:</strong> Paid Tournament</p>
+      <p><strong>Mode:</strong> Squad Battle Royale</p>
+      <p><strong>Starts At:</strong> May 24, 2025 at 06:00 PM</p>
+      <p><strong>Total Matches:</strong> 6</p>
+      <button class="btn-login">BOOK NOW</button>
+    </div>
+  </section>
+
+  <div class="tabs">
+    <a href="#" class="tab-link active" data-tab="all">ALL</a>
+    <a href="#" class="tab-link" data-tab="rules">RULES</a>
+    <a href="#" class="tab-link" data-tab="points">POINTS</a>
+    <a href="#" class="tab-link" data-tab="teams">TEAMS</a>
+    <a href="#" class="tab-link" data-tab="idp">IDP</a>
+  </div>
+
+  <div id="tab-content">
+    <div class="tab-panel active" id="all">
+      <div class="info-grid">
+
+      
+
+  <div class="info-grid">
+    <div class="card">
+      <h3>💰 Prize Pool</h3>
+      <p>100 Coins</p>
+    </div>
+    <div class="card">
+      <h3>🎟️ Entry Fee</h3>
+      <p>100 Coins</p>
+    </div>
+    <div class="card">
+      <h3>🎮 Mode</h3>
+      <p>Squad Battle Royale</p>
+    </div>
+    <div class="card">
+      <h3>🔢 Slots</h3>
+      <p>12 / 12</p>
+    </div>
+    <div class="card">
+      <h3>📊 Type</h3>
+      <p>Paid Tournament</p>
+    </div>
+    <div class="card">
+      <h3>🚀 Starts on</h3>
+      <p>May 26, 2025</p>
+    </div>
+
+  </div>
+
+  <!-- <div class="registration"> -->
+    <!-- <h3>📅 Registration</h3> -->
+    <!-- <p>Starts on: <strong>May 23, 2025 at 12:25 PM</strong></p> -->
+    <!-- <p>Ends on: <strong>May 26, 2025 at 01:30 PM</strong></p> -->
+  <!-- </div> -->
+    
+
+
+    </div>
+    <div class="tab-panel" id="rules">Rules content goes here...</div>
+    <div class="tab-panel" id="points">Points content goes here...</div>
+    <div class="tab-panel" id="teams">Teams content goes here...</div>
+    <div class="tab-panel" id="idp">IDP content goes here...</div>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll(".tab-link");
+    const panels = document.querySelectorAll(".tab-panel");
+
+    links.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        links.forEach(l => l.classList.remove("active"));
+        panels.forEach(p => p.classList.remove("active"));
+
+        this.classList.add("active");
+        const target = this.getAttribute("data-tab");
+        document.getElementById(target).classList.add("active");
+      });
+    });
+  </script>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <img src="WhatsApp Image 2025-06-02 at 18.34.30_8f345a25.jpg" 
+             alt="Thor Esports Logo" 
+             style="width: 80px; margin-bottom: 20px;">
+        <p>ThorEsports.in<br>Where Real Gamers Rise</p>
+        <p>📞 Phone: 7331176728</p>
+        <p>✉️ Email: thoresports@gmail.com</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Esports</li>
+          <li>Products</li>
+          <li>Blogs</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>NEED HELP?</h4>
+        <ul>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Refund Policy</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>FOLLOW US</h4>
+        <div class="social-icons" style="margin: 12px 0;">
+          <a href="#"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" /></a>
+          <a href="#"><img src="https://img.icons8.com/color/48/discord--v2.png" alt="Discord" /></a>
+          <a href="#"><img src="https://img.icons8.com/color/48/youtube-play.png" alt="YouTube" /></a>
+          <a href="#"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram" /></a>
+        </div>
+        <h4>NEWSLETTER SIGN UP</h4>
+        <form class="newsletter">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">🚀</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Copyright © 2025 <span style="color: rgba(0,0,255);">Thor Esports</span> All Rights Reserved.<br>
+      Made with ❤️ in India.
+    </div>
+
+  </footer>
+   
